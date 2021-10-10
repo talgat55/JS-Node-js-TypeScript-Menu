@@ -39,6 +39,11 @@ export const create = async (newItem: BaseItem): Promise<Item> => {
 
     return items[id];
 }
+
+export const update = async(id: number, itemUpdate: BaseItem): Promise<Item | null> => {
+
+}
+
 export const remove = async (id: number): Promise<null | void> => {
     const item = await find(id);
 
